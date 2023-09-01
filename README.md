@@ -1,14 +1,40 @@
 # Suicide Detection using Text Mining and Machine Learning
 
-## Overview
+## Abstract
 
-Suicide is a major public health concern, and early identification of individuals at risk of suicidal behavior is crucial for preventing suicide. However, identifying such individuals can be challenging due to the complexity of suicidal behavior. In recent years, text mining techniques and machine learning have emerged as powerful tools for analyzing text data to detect patterns indicative of suicidal behavior.
+Suicide is a significant public health concern, and early identification of individuals at risk of suicidal behavior is crucial. However, it's a challenging task due to the complex nature of this behavior. This project leverages text mining and machine learning techniques to develop a high-precision model for identifying texts that may indicate suicidal behavior. The data used is sourced from Reddit, offering valuable insights into language patterns associated with risk.
 
-This project aims to develop a high-precision model for identifying text data that may indicate suicidal behavior using text mining techniques and machine learning. The dataset used for this purpose is collected from the social media platform Reddit, providing a rich source of text data that offers insights into the language of individuals who might be at risk.
+## Contents
 
-## Models and Techniques
+- [Methods](#methods)
+  - [Data Preprocessing](#data-preprocessing)
+  - [Vectorizations](#vectorizations)
+  - [Feature Selection](#feature-selection)
+  - [Plots](#plots)
+- [Models and Results](#models-and-results)
+- [Libraries Used](#libraries-used)
 
-To achieve this goal, a combination of machine learning and deep learning techniques were employed, including:
+## Methods
+
+### Data Preprocessing
+
+- Text Pre-processing: Lowercasing, punctuation removal, stopword removal, and lemmatization were applied to clean the text data.
+
+### Vectorizations
+
+Vectorization techniques included Count Vectorization, TF-IDF Vectorization, and Bag of Words (BoW) Vectorization. Sentiment analysis using VADER was also performed.
+
+### Feature Selection
+
+Feature selection was achieved using LinearSVC to enhance model efficiency by focusing on the most relevant features while discarding less informative ones.
+
+### Plots
+
+Plots included visualizations of model performance metrics, ROC and precision-recall curves for binary classification models, and confusion matrices
+
+## Models and Results
+
+A combination of machine learning and deep learning methods was employed, including:
 
 - Support Vector Machines (SVM)
 - Random Forests
@@ -17,7 +43,7 @@ To achieve this goal, a combination of machine learning and deep learning techni
 - Logistic Regression
 - Naive Bayes
 
-These models were trained on the Reddit dataset to detect language patterns associated with suicidal behavior. The best accuracy achieved for each model with TF-IDF vectorization is as follows:
+The best accuracy achieved for each model is as follows:
 
 - Linear Regression: 92.5%
 - Logistic Regression: 93.6%
@@ -26,12 +52,16 @@ These models were trained on the Reddit dataset to detect language patterns asso
 - Naive Bayes: 90.8%
 - Neural Networks: 93.1%
 
-## Model Performance
+## Libraries Used
 
-The developed model achieved remarkable accuracy in identifying texts that may indicate suicidal behavior. This project demonstrates the potential of text mining and machine learning in early identification and intervention for individuals at risk of suicide.
+- pandas
+- numpy
+- seaborn
+- matplotlib.pyplot
+- plotly.express
+- nltk
+- gensim
+- scikit-learn
+- vaderSentiment
 
-## Conclusion
-
-This project serves as a foundation for further research in the field of suicide prevention and public health. By leveraging text mining and machine learning, it offers solutions for improving public health outcomes by enabling the early identification and intervention of individuals at risk of suicidal behavior.
-
-
+Feel free to explore the code and contribute to ongoing research in this critical area.
