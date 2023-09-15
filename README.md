@@ -1,4 +1,5 @@
 # Suicide Detection using Text Mining and Machine Learning
+![NLP gif](NLP.gif)
 
 ## Contents
 
